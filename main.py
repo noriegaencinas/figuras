@@ -13,3 +13,5 @@ if __name__ == '__main__':
 
 # venv?
 # nombres de los archivos?
+# donde puedo encontrar esta informacion?
+# se hace en docker?
