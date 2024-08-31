@@ -14,16 +14,18 @@
         <p class="col-lg-10 fs-4">Después de seleccionar una figura podrás calcular su área y perimetros cuando hayas introducido los datos correspondientes</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
-        <!--<form class="p-4 p-md-5 border rounded-3 bg-body-tertiary"> These are the classes of the component that was here, just in case somethings goes bad-->
+        <!--<form class="p-4 p-md-5 border rounded-3 bg-body-tertiary"> These are the classes of the component that was here, just in case somethings goes bad-->        
         <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
-            <div class="list-group list-group-checkable d-grid gap-2 border-0">
-              <input class="list-group-item-check pe-none" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios1" value="" checked="">
-              <label class="list-group-item rounded-3 py-3" for="listGroupCheckableRadios1">
+            <!--These are the radio buttons-->
+            <div class="list-group d-grid gap-2 border-0">
+              <a href="{{url_for('circulo')}}" class="list-group-item rounded-3 py-3">
+                <!--This is the svg of the figure-->
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
                   </svg>
-                Circulo                
-              </label>
+                <!--This is the name of the figure-->
+                Circulo
+              </a>
           
               <input class="list-group-item-check pe-none" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
               <label class="list-group-item rounded-3 py-3" for="listGroupCheckableRadios2">
@@ -40,13 +42,10 @@
                   </svg>
                 Cuadrado                
               </label>
-            </div>
+            </div><!--Radio buttons finish here-->
           </div>
       </div>
     </div>
   </div>
 
-<div class="container">
-  
-</div>
 {% endblock %}
