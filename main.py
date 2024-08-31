@@ -3,15 +3,17 @@ from flask import *
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return render_template('index.html')
+from controller.menu_controller import *
+from controller.circulo_controller import *
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False) #Debug true when developing
 
-
+# DUDAS
 # venv?
 # nombres de los archivos?
-# donde puedo encontrar esta informacion?
-# se hace en docker?
+# donde puedo encontrar esta informacion? (de los estandares para nombrar cosas)
+# se hace en docker? (en empresas)
+# los view se hacen en html?
+# los circle svg y eso, es mejor tenerlos en una carpeta o acceder a ellos por internet?
+# cada cuanto se hace un commit?
