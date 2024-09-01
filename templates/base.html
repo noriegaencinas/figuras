@@ -93,13 +93,15 @@
       </symbol>
     </svg>
       <!-- This is the header-->
-      <div class="container">
-        <header class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4 border-bottom">
-          <a href="{{ url_for('menu_view') }}" class="d-flex align-items-center mb-3 mb-md-0 link-body-emphasis text-decoration-none">
-            <img src="/static/img/logo.png" alt="imagen de logo" width="50px" height="50px" class="me-2">
-            <span class="h1 italiana-normal">Calculador para figuras geométricas</span>
-          </a>
-        </header>
+      <div class="container-fluid border-bottom">
+        <div class="container">
+          <header class="d-flex flex-wrap justify-content-center align-items-center py-3 mb-4">
+            <a href="{{ url_for('menu_view') }}" class="d-flex align-items-center mb-3 mb-md-0 link-body-emphasis text-decoration-none">
+              <img src="/static/img/logo.png" alt="imagen de logo" width="50px" height="50px" class="me-2">
+              <span class="h1 italiana-normal">Calculador para figuras geométricas</span>
+            </a>
+          </header>
+        </div>
       </div>
       
             
@@ -107,12 +109,14 @@
       {% block content %} {% endblock %}
 
       <!-- This is the footer-->
-      <div class="container fixed-bottom">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Universidad de Sonora</span>
-          </div>
-        </footer>
+      <div class="container-fluid fixed-bottom border-top">
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <div class="col-md-4 d-flex align-items-center">
+              <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Universidad de Sonora</span>
+            </div>
+          </footer>
+        </div>
       </div>
 
       {% block scripts %}

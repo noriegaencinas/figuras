@@ -10,7 +10,7 @@ from controller.triangulo_controller import *
 # from controller.rectangulo_controller import * # Remove this line on deployment
 
 if __name__ == '__main__':
-    app.run(port=5015, debug=False) #Debug true when developing
+    app.run(port=5022, debug=False) #Debug true when developing
 
 # DUDAS
 # venv?
