@@ -1,4 +1,4 @@
-from app import app
+from main import app
 from flask import render_template
 from model.menu_model import *
 
