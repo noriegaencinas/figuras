@@ -22,7 +22,7 @@
               {% for figura in lista_figuras %}
                 <a href="{{ url_for(figura.url) }}" class="custom-hover list-group-item rounded-3 py-3 d-flex align-items-center">
                   <!-- Imagen de la figura, alineada a la izquierda -->
-                  <img src="{{ figura.imagen }}" width="32" height="32"></iframe>
+                  <img src="{{ figura.imagen }}" width="32" height="32"></img>
                   <!-- Nombre de la figura, centrado tanto vertical como horizontalmente -->
                   <span class="flex-grow-1 text-center h3">{{ figura.nombre }}</span>
                 </a>            
