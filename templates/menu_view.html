@@ -18,35 +18,20 @@
         <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
             <!--These are the radio buttons-->
             <div class="list-group d-grid gap-2 border-0">
-              <a href="{{url_for('circulo')}}" class="list-group-item rounded-3 py-3">
-                <!--This is the svg of the figure-->
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                  </svg>
-                <!--This is the name of the figure-->
-                Circulo
-              </a>
-          
-              <input class="list-group-item-check pe-none" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
-              <label class="list-group-item rounded-3 py-3" for="listGroupCheckableRadios2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-triangle" viewBox="0 0 16 16">
-                    <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
-                  </svg>
-                Tríangulo                
-              </label>
-                        
-              <input class="list-group-item-check pe-none" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios3" value="">              
-              <label class="list-group-item rounded-3 py-3" for="listGroupCheckableRadios3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-square" viewBox="0 0 16 16">
-                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
-                  </svg>
-                Cuadrado                
-              </label>
+              {% for figura in lista_figuras %}
+                <a href="{{ url_for(figura.url) }}" class="list-group-item rounded-3 py-3 d-flex align-items-center">
+                  <!-- Imagen de la figura, alineada a la izquierda -->
+                  <iframe src="{{ figura.imagen }}" width="32" height="32" class="me-2"></iframe>
+                  <!-- Nombre de la figura, centrado tanto vertical como horizontalmente -->
+                  <span class="flex-grow-1 text-center h3">{{ figura.nombre }}</span>
+                </a>            
+              {% endfor %}
             </div><!--Radio buttons finish here-->
           </div>
       </div>
     </div>
   </div>
+
 {% endblock %}
 
 {% block scripts %}

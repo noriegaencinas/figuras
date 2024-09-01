@@ -5,6 +5,7 @@ class Triangulo(FiguraGeometrica):
         self.base = base
         self.altura = altura
         self.image = 'static/triangle.svg' # Image of the triangle
+        self.name = 'Triangulo'
 
     def calcular_area(self):
         return (self.base * self.altura) / 2

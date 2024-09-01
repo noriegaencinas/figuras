@@ -6,6 +6,7 @@ class Circulo(FiguraGeometrica): # Creamos la clase Circulo que hereda de Figura
     def __init__(self, radio):
         self.radio = radio         
         self.image = 'static/circle.svg' # Image of the circle
+        self.name = 'Circulo'
 
     def calcular_area(self):
         return math.pi * self.radio ** 2
