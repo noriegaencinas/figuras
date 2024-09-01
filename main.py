@@ -9,7 +9,7 @@ from controller.cuadrado_controller import *
 from controller.triangulo_controller import *
 
 if __name__ == '__main__':
-    app.run(port=5010, debug=False) #Debug true when developing
+    app.run(port=5013, debug=False) #Debug true when developing
 
 # DUDAS
 # venv?
