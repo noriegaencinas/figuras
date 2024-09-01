@@ -2,5 +2,15 @@
     font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 64px;
+    font-size: 3vw;
+    color: black;
+}
+
+.topes {
+    background-color: #9ED5C5;
+}
+
+.fondo {
+    background-color: #DEF5E5;
+    color : black;
 }

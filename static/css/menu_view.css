@@ -1,6 +1,6 @@
   /* Cambiar el color cuando el mouse está sobre el elemento */
   .custom-hover:hover {
-    background-color: #BCEAD5;
+    background-color: #9ED5C5;
     color: black; 
   }
 
@@ -8,4 +8,10 @@
   .custom-hover:active {
     background-color: #8EC3B0;
     color: black; 
+  }
+
+  .custom-hover{
+    background-color: #BCEAD5;
+    border-color: #8EC3B0;
+    color: black;
   }
