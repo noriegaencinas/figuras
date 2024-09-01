@@ -1,4 +1,4 @@
-from main import app
+from app import app
 from flask import render_template
 from model.cuadrado_model import *
 
