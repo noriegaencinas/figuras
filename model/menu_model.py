@@ -14,10 +14,10 @@ def get_figuras():
             'nombre': 'Triángulo',
             'imagen': '/static/img/triangle.svg',
             'url': 'triangulo'
-        }
+        },
     ]
 
-testing = True
+testing = False
 def test():
     print('Testing menu_model.py')
     figuras = get_figuras()

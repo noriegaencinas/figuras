@@ -3,6 +3,7 @@
 {% block styles %}
     {{ super() }} <!--This is mentioning all the references inside the block of styles in base.html-->
     <link rel="stylesheet" href="/static/css/list_groups.css">  
+    <link rel="stylesheet" href="/static/css/menu_view.css">
 {% endblock %}
 
 {% block content %}
@@ -11,7 +12,7 @@
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
         <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Selecciona una figura</h1>
-        <p class="col-lg-10 fs-4">Después de seleccionar una figura podrás calcular su área y perimetros cuando hayas introducido los datos correspondientes</p>
+        <p class="col-lg-10 fs-4">Después de seleccionar una figura podrás calcular su área y perímetro cuando hayas introducido los datos correspondientes</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
         <!--<form class="p-4 p-md-5 border rounded-3 bg-body-tertiary"> These are the classes of the component that was here, just in case somethings goes bad-->        
@@ -19,9 +20,9 @@
             <!--These are the radio buttons-->
             <div class="list-group d-grid gap-2 border-0">
               {% for figura in lista_figuras %}
-                <a href="{{ url_for(figura.url) }}" class="list-group-item rounded-3 py-3 d-flex align-items-center">
+                <a href="{{ url_for(figura.url) }}" class="custom-hover list-group-item rounded-3 py-3 d-flex align-items-center">
                   <!-- Imagen de la figura, alineada a la izquierda -->
-                  <iframe src="{{ figura.imagen }}" width="32" height="32" class="me-2"></iframe>
+                  <img src="{{ figura.imagen }}" width="32" height="32"></iframe>
                   <!-- Nombre de la figura, centrado tanto vertical como horizontalmente -->
                   <span class="flex-grow-1 text-center h3">{{ figura.nombre }}</span>
                 </a>            
