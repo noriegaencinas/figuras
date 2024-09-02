@@ -20,3 +20,21 @@
     border-color: #8EC3B0;
     color: black;
 }
+
+.custom-color-button {
+    background-color: #9ED5C5;
+    border-color: black;
+    color: black;
+}
+
+.custom-color-button:hover {
+    background-color: #8EC3B0;
+    border-color: black;
+    color: black;
+}
+
+.custom-color-button:active {
+    background-color: rgba(126, 161, 154, 0.533);
+    border-color: black;
+    color: black;
+}
