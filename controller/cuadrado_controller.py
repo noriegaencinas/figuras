@@ -17,4 +17,4 @@ def cuadrado_calcular():
     elif accion == 'calcular_perimetro':
         resultado = cuadrado.calcular_perimetro()
         
-    return render_template('cuadrado_view.html', resultado=resultado)    
+    return render_template('cuadrado_view.html', resultado=[accion, resultado])   

@@ -17,4 +17,4 @@ def triangulo_calcular():
         resultado = triangulo.calcular_area()
     elif accion == 'calcular_perimetro':
         resultado = triangulo.calcular_perimetro()    
-    return render_template('triangulo_view.html', resultado=resultado)    
+    return render_template('triangulo_view.html', resultado=[accion, resultado])
