@@ -4,7 +4,7 @@ from model.circulo_model import *
 
 @app.route('/circulo')
 def circulo():
-    return render_template('figura_view.html')
+    return render_template('circulo_view.html')
 
 # @app.route('/circulo/area')
 # def circulo_area():

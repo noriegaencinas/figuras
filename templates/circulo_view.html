@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    {{ super() }}        
+{% endblock %}
+
+{% block content %}
+
+<div class="custom-color container col-xl-10 col-xxl-8 px-4 py-5 my-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <!--Left div-->
+      <div class="col-lg-7 d-flex justify-content-center text-lg-start">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#8EC3B0" class="bi bi-circle-fill" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="8"/>
+        </svg>
+      </div>
+      <!--Right div-->
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form action="{{ url_for('menu_view') }}", method="POST">
+          <div class="mb-1">
+            <label for="recipient-name" class="col-form-label">Número</label>
+            <input name="numero_contacto" type="number" class="form-control" required>
+          </div>     
+          <div class="modal-footer">        
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Confirmar</button>
+          </div>  
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}    
+{% endblock %}

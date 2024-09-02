@@ -4,4 +4,4 @@ from model.cuadrado_model import *
 
 @app.route('/cuadrado')
 def cuadrado():
-    return render_template('figura_view.html')
+    return render_template('cuadrado_view.html')

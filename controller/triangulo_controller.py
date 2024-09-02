@@ -4,4 +4,4 @@ from model.triangulo_model import *
 
 @app.route('/circulo')
 def triangulo():
-    return render_template('figura_view.html')
+    return render_template('triangulo_view.html')
