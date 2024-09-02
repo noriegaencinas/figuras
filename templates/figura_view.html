@@ -1,24 +1,38 @@
 {% extends "base.html" %}
 
 {% block styles %}
-    {{ super() }}    
+    {{ super() }}        
 {% endblock %}
 
 {% block content %}
-    <div class="b-example-divider"></div>
-    <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-            </div>
-            <div class="col-lg-6 align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-                  </svg>
-            </div>
-        </div>
+
+<div class="custom-color container col-xl-10 col-xxl-8 px-4 py-5 mt-3">
+    <div class="row align-items-center g-lg-5 py-5">
+      <!--Left div-->
+      <div class="col-lg-7 d-flex justify-content-center text-lg-start">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#8EC3B0" class="bi bi-circle-fill" viewBox="0 0 16 16">
+            <circle cx="8" cy="8" r="8"/>
+        </svg>
+      </div>
+      <!--Right div-->
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+          <hr class="my-4">
+          <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+        </form>
+      </div>
     </div>
-    <div class="b-example-divider"></div>
+  </div>
+
 {% endblock %}
 
 {% block scripts %}
