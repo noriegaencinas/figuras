@@ -12,9 +12,10 @@ def triangulo_calcular():
     base = float(request.form['base'])
     altura = float(request.form['altura'])
     triangulo = Triangulo(base, altura)
+    nombre_accion = "área" if accion == 'calcular_area' else "perímetro"
 
     if accion == 'calcular_area':
         resultado = triangulo.calcular_area()
     elif accion == 'calcular_perimetro':
         resultado = triangulo.calcular_perimetro()    
-    return render_template('triangulo_view.html', resultado=resultado)    
+    return render_template('triangulo_view.html', resultado=[nombre_accion, resultado])

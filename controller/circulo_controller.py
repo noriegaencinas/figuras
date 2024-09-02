@@ -11,13 +11,14 @@ def circulo_calcular():
     accion = request.form['accion']
     radio = float(request.form['radio'])
     circulo = Circulo(radio)
+    nombre_accion = "área" if accion == 'calcular_area' else "perímetro"
 
     if accion == 'calcular_area':        
         resultado = circulo.calcular_area()        
     elif accion == 'calcular_perimetro':        
         resultado = circulo.calcular_perimetro()   
 
-    return render_template('circulo_view.html', resultado=resultado)    
+    return render_template('circulo_view.html', resultado=[nombre_accion, resultado])    
         
 
 
