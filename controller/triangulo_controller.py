@@ -2,7 +2,7 @@ from main import app
 from flask import render_template, request
 from model.triangulo_model import *
 
-@app.route('/circulo')
+@app.route('/triangulo')
 def triangulo():
     return render_template('triangulo_view.html')
 
