@@ -1,0 +1,53 @@
+.italiana-normal {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: black;
+}
+
+.topes {
+    background-color: #9ED5C5;
+}
+
+.fondo {
+    background-color: #DEF5E5;
+    color : black;
+}
+
+.custom-color{
+    background-color: #BCEAD5;
+    border-color: #8EC3B0;
+    color: black;
+}
+
+.custom-color-button {
+    background-color: #9ED5C5;
+    border-color: black;
+    color: black;
+}
+
+.custom-color-button:hover {
+    background-color: #8EC3B0;
+    border-color: black;
+    color: black;
+}
+
+.custom-color-button:active {
+    background-color: rgba(126, 161, 154, 0.533);
+    border-color: black;
+    color: black;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 576px) {
+    header a img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    header a span {
+      font-size: 1.75rem; /* Ajusta el tamaño del texto */
+    }
+  }
+  
